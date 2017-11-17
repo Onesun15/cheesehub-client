@@ -19,7 +19,8 @@ export function cheesesReducer(state = initialState, action) {
       loading: false,
       error: null
     });
-  } else if (action.type === FETCH_CHEESES_ERROR) {
+  } 
+   else if (action.type === FETCH_CHEESES_ERROR) {
     return Object.assign({}, state, {
       error: action.error,
       loading: false,
